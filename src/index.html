@@ -1,17 +1,77 @@
+﻿
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="Img/favicon.png">
+    <title>Ollz</title>
+
+    <style>
+
+        html {
+            overflow: hidden;
+        }
+
+        #bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            /* Preserve aspet ratio */
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        @media (max-width: 480px) {
+            .bgimg {
+                background-image: url(Img/mobile.jpg);
+                background-repeat: no-repeat;
+                background-position: 31%;
+                /*position: absolute;*/
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                min-width: 100%;
+                min-height: 100%;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 1024px) {
+            .bgimg {
+                background-image: url(Img/mobile.jpg);
+                background-repeat: no-repeat;
+                background-position: 31%;
+                /*position: absolute;*/
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                min-width: 100%;
+                min-height: 100%;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .bgimg {
+                background-image: url(Img/comingsoon.jpg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                background-size: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+    <div class="bgimg"></div>
 
+</body>
 </html>
